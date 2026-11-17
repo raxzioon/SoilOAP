@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+
+  --color-daun-tua: #24402A;
+  --color-lumut: #5B7F3A;
+  --color-jeruk-nipis: #A9C23F;
+  --color-kapas: #F3EEDD;
+  --color-tanah: #6B4A2B;
+  --color-amber: #D79A22;
+  --color-embun: #CFE3D0;
+  --color-ink: #1A211B;
+}
+
+:root {
+  /* Color Tokens */
+  --c-daun-tua: #24402A;
+  --c-lumut: #5B7F3A;
+  --c-jeruk-nipis: #A9C23F;
+  --c-kapas: #F3EEDD;
+  --c-tanah: #6B4A2B;
+  --c-amber: #D79A22;
+  --c-embun: #CFE3D0;
+  --c-ink: #1A211B;
+
+  /* Dynamic Landscape Variables (Interpolated by GSAP ScrollTrigger) */
+  --sky-top: #DFD7C2;
+  --sky-bottom: #C8BAA1;
+  --sun-glow: #F1DEC0;
+  --hill-far: #656C53;
+  --hill-mid: #4F5A38;
+  --rice-terrace: #3E4B2B;
+  --river-water: #8F8261;
+  --river-sheen: #B0A584;
+}
+
+/* Base resets & typography */
+html {
+  font-family: var(--font-sans);
+  background-color: var(--c-kapas);
+  color: var(--c-ink);
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+/* Paper-cut SVG shadow effects */
+.paper-cut-shadow {
+  filter: drop-shadow(0 4px 6px rgba(26, 33, 27, 0.08));
+}
+
+.paper-cut-shadow-lg {
+  filter: drop-shadow(0 8px 16px rgba(26, 33, 27, 0.12));
+}
+
+/* Organic hand-crafted borders */
+.organic-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.organic-border-subtle {
+  border-radius: 4px 8px 4px 7px;
+}
+
+/* Sway animation for ambient foreground foliage */
+@keyframes sway-slow {
+  0%, 100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(2deg) translate(2px, -3px);
+  }
+}
+
+@keyframes sway-reverse {
+  0%, 100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(-2.5deg) translate(-3px, -2px);
+  }
+}
+
+.animate-sway {
+  animation: sway-slow 7s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+.animate-sway-reverse {
+  animation: sway-reverse 8s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+/* Gentle water flow pulse */
+@keyframes water-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    opacity: 0.9;
+    stroke-dashoffset: 20;
+  }
+}
+
+.water-flow-line {
+  stroke-dasharray: 8 12;
+  animation: water-pulse 5s linear infinite;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-sway, .animate-sway-reverse, .water-flow-line {
+    animation: none !important;
+  }
+}
