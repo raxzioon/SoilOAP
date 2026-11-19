@@ -69,7 +69,7 @@ SoilOAP adalah sabun cair ramah lingkungan khusus pencuci piring, wajan berminya
 3. **Diagram Melingkar Siklus Tertutup**:
    - Visualisasi loop sirkular interaktif: UMKM $\rightarrow$ Jelantah $\rightarrow$ SoilOAP $\rightarrow$ Sabun $\rightarrow$ Kembali ke UMKM.
 4. **Formulir Pendaftaran Mitra WhatsApp**:
-   - Form interaktif dengan pratinjau pesan otomatis yang langsung terhubung ke WhatsApp Business `081906602421`.
+   - Form interaktif dengan pratinjau pesan otomatis yang langsung terhubung ke WhatsApp Business `085126063230`.
 
 ---
 
@@ -108,4 +108,4 @@ npm run build
 - **Puteri Najma Azzahra** — *Formulasi & Riset Produk*
 - **Fachri Bima Ibrahim** — *Kemitraan UMKM & Logistik*
 
-**Kontak Resmi WhatsApp**: `081906602421` (`+6281906602421`)
+**Kontak Resmi WhatsApp**: `085126063230` (`+6285126063230`)

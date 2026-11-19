@@ -55,9 +55,9 @@ export const SITE_METADATA = {
     { name: 'Fachri Bima Ibrahim', role: 'Kemitraan UMKM & Logistik' },
   ],
   contacts: {
-    whatsappNumber: '6281906602421',
-    whatsappDisplay: '0819-0660-2421',
-    whatsappLink: 'https://wa.me/6281906602421?text=Halo%20Tim%20SoilOAP,%20saya%20tertarik%20dengan%20produk%20dan%20kemitraan%20SoilOAP.',
+    whatsappNumber: '6285126063230',
+    whatsappDisplay: '0851-2606-3230',
+    whatsappLink: 'https://wa.me/6285126063230?text=Halo%20Tim%20SoilOAP,%20saya%20tertarik%20dengan%20produk%20dan%20kemitraan%20SoilOAP.',
     shopeeLink: 'https://shopee.co.id/[ISI: Link Toko Shopee]',
     tokopediaLink: 'https://tokopedia.com/[ISI: Link Toko Tokopedia]',
     instagramLink: 'https://instagram.com/[ISI: Akun Instagram SoilOAP]',
